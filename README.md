@@ -52,7 +52,7 @@ A comprehensive career development platform built with Next.js, featuring AI-pow
    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
    
    GEMINI_API_KEY=your_gemini_api_key
-   ```
+   ``` 
 
 4. **Initialize the database**
    ```bash
