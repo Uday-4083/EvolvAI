@@ -29,7 +29,9 @@ export const onboardingSchema = z.object({
 
 export const contactSchema = z.object({
   email: z.string().email("Invalid email address"),
-  mobile: z.string().optional(),
+  mobile: z.string()
+    .regex(/^(\+\d{1,3})?\s?\d{10}$/, "Invalid phone number. Format: +91 1234567890")
+    .optional(),
   linkedin: z.string().optional(),
   twitter: z.string().optional(),
 });
